@@ -1,0 +1,21 @@
+# 运行时产生的文件（用户各自的设置与报错）
+settings.ini
+error.log
+
+# 打包产物（走 Release 附件，不进版本库）
+*.zip
+
+# Python 缓存
+# 注意：不要写成 *.py[cod]，那会连 .pyd 一起吞掉，
+# 而 runtime/DLLs 下的 .pyd 是必需模块，缺了程序起不来。
+__pycache__/
+*.pyc
+*.pyo
+
+# 本项目的 AI 工作区，含对话记录与笔记，绝不入库
+.workbuddy-ai/
+
+# 系统杂项
+Thumbs.db
+desktop.ini
+.DS_Store
